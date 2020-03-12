@@ -18,7 +18,45 @@ let menuItems = [
       {each menu item as a list item}
     </ul>
   </div>
+*/   // just need a div and ul? 
 
+
+  const newMenu = menuItems => {
+    const menuDiv = document.createElement('div')
+    const menuList = document.createElement('ul');
+    menuItems.forEach(content =>{
+      let item = document.createElement('li');
+      item.textContent = content;
+      menuList.appendChild(content);
+    });
+
+    menuDiv.classList.add('menu');
+    menuDiv.appendChild(menuList);
+
+    const menuButton = document.querySelector('.menu-button');
+    menuButton.addEventListener('click', () => {
+      menuDiv.classList.toggle('menu--open');
+    });
+    return menuDiv;
+
+  };
+
+  const head = document.querySelector('.header');
+  head.prepend(newMenu(menuItems));
+  console.log(menuDiv);
+  
+//should change menuDiv to menu probably
+
+//   (students, faculty, firstParagraph, secondParagraph, thirdParagraph) => {
+// const article = document.createElement('div');
+// const articleTitle = document.createElement('h2');
+// const articleDate = document.createElement('p');
+// const articleP1 = document.createElement('p'); //articleP1.textcontent = newP1; ??
+// const articleP2 = document.createElement('p');
+// const articleP3 = document.createElement('p');
+// const articleButton = document.createElement('span');
+
+/*
   The function takes an array as its only argument.
 
   Step 2: Inside this function, iterate over the array creating a list item <li> element for each item in the array. 
