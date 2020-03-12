@@ -85,6 +85,20 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Rohith is really cool',
+    date: 'March 11th, 2020',
+    firstParagraph: `Man... what can't this guy do`,
+    secondParagraph: `Legendary ... everything he types turns to gold`,
+    thirdParagraph: `WOW I can't even believe it... first him ... this whole coronavirus thing shut down the NBA too!`
+  },
+  {
+    title: 'Simply Amazing',
+    date: 'March 11th, 2020',
+    firstParagraph: `Who is he to do all this coding`,
+    secondParagraph: `Spectators can't believe it`,
+    thirdParagraph: `Astonishing... Jaw Dropping`
   }
 ];
 
