@@ -24,10 +24,11 @@ let menuItems = [
   const newMenu = menuItems => {
     const menuDiv = document.createElement('div')
     const menuList = document.createElement('ul');
-    menuItems.forEach(content =>{
+
+    menuItems.forEach(content => {
       let item = document.createElement('li');
       item.textContent = content;
-      menuList.appendChild(content);
+      menuList.appendChild(item);
     });
 
     menuDiv.classList.add('menu');
