@@ -107,14 +107,20 @@ const newArticle = (newTitle, newDate, newP1, newP2, newP3) => {
 const article = document.createElement('div');
 const articleTitle = document.createElement('h2');
 const articleDate = document.createElement('p');
-const articleP1 = document.createElement('p');
+const articleP1 = document.createElement('p'); //articleP1.textcontent = newP1; ??
 const articleP2 = document.createElement('p');
 const articleP3 = document.createElement('p');
+const articleButton = document.createElement('span');
 
+//classes are .article, .date, .expandButton; add button now? 
 
 article.classList.add('article');
 articleDate.classList.add('date');
+articleButton.classList.add('expandButton');
 
+//Append 
+
+article.appendChild
 }
 
 
