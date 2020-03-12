@@ -112,18 +112,52 @@ const articleP2 = document.createElement('p');
 const articleP3 = document.createElement('p');
 const articleButton = document.createElement('span');
 
-//classes are .article, .date, .expandButton; add button now? 
+//classes are .article, .date, .expandButton; add button now? .article-open
 
 article.classList.add('article');
 articleDate.classList.add('date');
 articleButton.classList.add('expandButton');
 
-//Append 
+//Append; 
 
-article.appendChild
-}
+article.appendChild(articleTitle);
+article.appendChild(articleDate);
+article.appendChild(articleP1);
+article.appendChild(articleP2);
+article.appendChild(articleP3);
+article.appendChild(articleButton);
+
+articleTitle.textContent = newTitle;
+articleDate.textContent = newDate;
+articleP1.textContent = newP1;
+articleP2.textContent = newP2;
+articleP3.textContent = newP3;
+articleButton.textContent = "Click to Expand";
+
+articleButton.addEventListener('click', () => {
+article.classList.toggle('article-open');
+});
+
+return article;
+
+};
+
+const allArticles = document.querySelector(".articles");
+data.forEach(item => {
+  allArticles.appendChild(
+    newArticle(
+      item.newTitle,
+      item.newDate,
+      item.newP1,
+      item.newP2,
+      item.newP3
+    )
+  );
+});
 
 
+
+//function done(?) but need to insert your own content ... 
 
 /*
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
