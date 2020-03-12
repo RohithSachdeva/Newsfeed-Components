@@ -103,7 +103,7 @@ const data = [
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
 */
-const newArticle = (newTitle, newDate, newP1, newP2, newP3) => {
+const newArticle = (title, date, firstParagraph, secondParagraph, thirdParagraph) => {
 const article = document.createElement('div');
 const articleTitle = document.createElement('h2');
 const articleDate = document.createElement('p');
@@ -127,11 +127,11 @@ article.appendChild(articleP2);
 article.appendChild(articleP3);
 article.appendChild(articleButton);
 
-articleTitle.textContent = newTitle;
-articleDate.textContent = newDate;
-articleP1.textContent = newP1;
-articleP2.textContent = newP2;
-articleP3.textContent = newP3;
+articleTitle.textContent = title;
+articleDate.textContent = date;
+articleP1.textContent = firstParagraph;
+articleP2.textContent = secondParagraph;
+articleP3.textContent = thirdParagraph;
 articleButton.textContent = "Click to Expand";
 
 articleButton.addEventListener('click', () => {
@@ -146,11 +146,11 @@ const allArticles = document.querySelector(".articles");
 data.forEach(item => {
   allArticles.appendChild(
     newArticle(
-      item.newTitle,
-      item.newDate,
-      item.newP1,
-      item.newP2,
-      item.newP3
+      item.title,
+      item.date,
+      item.firstParagraph,
+      item.secondParagraph,
+      item.thirdParagraph
     )
   );
 });
